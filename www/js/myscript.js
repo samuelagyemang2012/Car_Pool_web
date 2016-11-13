@@ -62,10 +62,10 @@ function login() {
         global_id = obj.id;
 
         //test code
-    $.cookie('user_id', global_id);
-    //
-    get_my_pools();
-    //alert(global_id);
+        $.cookie('user_id', global_id);
+        //
+        get_my_pools();
+        //alert(global_id);
     }
 }
 
@@ -217,10 +217,17 @@ function get_a_pool(id) {
     build += "<h2 class='align-center'> GHC " + obj.cost + "</h2><hr>";
 
     build += "<div class='row'>";
-    build += "<div class='col-xs-6'>";
+    build += "<div class='col-xs-4'>";
     build += "<a href='#' class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button' onclick='get_my_pools()'><i class='zmdi zmdi-arrow-back'></i></a>";
     build += "</div>";
-    build += "<div class='col-xs-6 align-right'>";
+
+    //test
+    build += "<div class='col-xs-4 align-center'>";
+    build += "<a href='#' class='ui-btn ui-btn-inline' onclick=''><i class='zmdi zmdi-face zmd-2x'></i></a>" + obj.num;
+    build += "</div>";
+    //
+
+    build += "<div class='col-xs-4 align-0right'>"; 
     build += "<a href='#' class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button' onclick='get_data_for_update(" + obj.id + ")'><i class='zmdi zmdi-edit'></i></a>";
     build += "</div>";
     //build += "<a href='#' class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button' onclick=''><i class='zmdi zmdi-account-add'></i></a>";
