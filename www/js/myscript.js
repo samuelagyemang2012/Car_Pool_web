@@ -227,7 +227,7 @@ function get_a_pool(id) {
     build += "</div>";
     //
 
-    build += "<div class='col-xs-4 align-0right'>"; 
+    build += "<div class='col-xs-4 align-right'>";
     build += "<a href='#' class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button' onclick='get_data_for_update(" + obj.id + ")'><i class='zmdi zmdi-edit'></i></a>";
     build += "</div>";
     //build += "<a href='#' class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button' onclick=''><i class='zmdi zmdi-account-add'></i></a>";
